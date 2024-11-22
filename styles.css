@@ -1,0 +1,201 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Navigation Styles */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6347;
+}
+
+/* Hero Section */
+#hero {
+  background: url("hero-image.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* Ensures text is white over the hero image */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* Sets the name color to dark gray for visibility */
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: #666; /* Sets the tagline color to a lighter gray */
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  color: #333; /* Ensures section headings are visible */
+}
+
+section h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #ff6347;
+  display: block;
+  margin: 10px auto;
+}
+
+section p,
+section ul {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333; /* Ensures paragraph text is visible */
+}
+
+/* Experience and Projects */
+.experience-item,
+.project-item {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #ff6347;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3,
+.project-item h3 {
+  margin-top: 0;
+  color: #333; /* Ensures item headings are visible */
+}
+
+.experience-item p,
+.project-item p {
+  margin: 10px 0;
+  color: #666; /* Sets item descriptions to a lighter gray */
+}
+
+.experience-item ul,
+.project-item ul {
+  padding-left: 20px;
+  color: #333; /* Ensures list items are visible */
+  list-style: disc;
+}
+
+/* Skills Section */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills li {
+  background: #fff;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333; /* Ensures skill items are visible */
+}
+
+/* Contact Section */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact label {
+  margin-bottom: 5px;
+  color: #333; /* Ensures labels are visible */
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333; /* Ensures input text is visible */
+}
+
+#contact button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff6347;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact button:hover {
+  background: #e5533d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/* Styles for the profile photo */
+.profile-photo {
+  width: 150px; /* Set the width of the photo */
+  height: 150px; /* Set the height of the photo */
+  border-radius: 50%; /* Make the photo circular */
+  border: 3px solid #ff6347; /* Add a border with a standout color */
+  margin-bottom: 20px; /* Add spacing below the photo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a polished look */
+  object-fit: cover; /* Ensure the image scales properly without distortion */
+}
