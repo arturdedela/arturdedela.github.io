@@ -199,3 +199,26 @@ footer {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a polished look */
   object-fit: cover; /* Ensure the image scales properly without distortion */
 }
+
+/* General styles for error messages */
+.error-message {
+  color: #ff6347;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.error-visible {
+  visibility: visible;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in animation for error messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
