@@ -1,4 +1,10 @@
 /* General Styles */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -26,6 +32,12 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
 }
 
 nav ul {
@@ -191,8 +203,8 @@ footer {
 
 /* Styles for the profile photo */
 .profile-photo {
-  width: 150px; /* Set the width of the photo */
-  height: 150px; /* Set the height of the photo */
+  width: 250px; /* Set the width of the photo */
+  height: 250px; /* Set the height of the photo */
   border-radius: 50%; /* Make the photo circular */
   border: 3px solid #ff6347; /* Add a border with a standout color */
   margin-bottom: 20px; /* Add spacing below the photo */
